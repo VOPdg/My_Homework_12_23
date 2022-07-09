@@ -23,4 +23,22 @@ public class MyTests {
         step("Click the button 'Logout'");
         step("Log out");
     }
+
+    @Test
+    @AllureId("11032")
+    @DisplayName("Search air ticket")
+    @Owner("allure8")
+    void testSearchAirTicket() {
+        step("Open belavia.by website");
+        step("Input Minsk into From field");
+        step("Input Moscow into To field");
+        step("Click Return radio button");
+        step("Click Departure date", () -> {
+            step("Choose 20 July 2022 in Datepicker");
+        });
+        step("Click Return date", () -> {
+            step("Choose 22 July 2022 in Datepicker");
+        });
+        step("Click Search button");
+    }
 }
