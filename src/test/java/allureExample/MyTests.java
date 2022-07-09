@@ -11,7 +11,7 @@ public class MyTests {
 
     @Test
     @Owner("allure8")
-    @AllureId("10857")
+    @AllureId("11031")
     @DisplayName("Authorization")
     void testAuthorization() {
         step("Open home page", () -> {
